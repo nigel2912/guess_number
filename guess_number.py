@@ -18,9 +18,7 @@ def guess(x):
             print('Sorry,too low.Guess again')
         if guess > random_number:
             print('Sorry,too high.Guess again')
-
-    print(
-        f'Yay! Congrats.You have guessed the number {random_number} correctly')
+    print(f'Yay! Congrats.You have guessed the number {random_number} correctly')
 
 
 def computer_guess(x):
@@ -43,8 +41,7 @@ def computer_guess(x):
         # Note: random.randint will throw an error if low and high are the same value
         # because if low and high are equal then basically the computer has
         # narrowed it down to your number
-        feedback = input(
-            f'Is {guess} too High(H), too Low(L), or Correct(C)').lower()
+        feedback = input(f'Is {guess} too High(H), too Low(L), or Correct(C)').lower()
         if feedback == 'h':
             high = guess-1
         elif feedback == 'l':
@@ -53,4 +50,5 @@ def computer_guess(x):
     print(f'Yay! the computer guessed your number, {guess},correctly')
 
 
-guess(10)
+# guess(10) #for the user to guess a certain number
+computer_guess(1000)  # for the computer to guess a certain number
